@@ -1,0 +1,251 @@
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* stays behind everything */
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+header {
+  margin-bottom: 40px;
+}
+
+main {
+  margin-bottom: 40px;
+}
+.hipe h2 {
+  background-color: yellow; /* sets the background to yellow */
+  color: black; /* text color for contrast */
+  padding: 10px;
+  border-radius: 4px; /* optional: rounded corners */
+  display: inline-block;
+}
+
+.hipe ul {
+  list-style-type: square; /* options: disc, circle, square, none */
+}
+
+.hipe li {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fff9c4; /* soft yellow background */
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+footer {
+  margin-top: 170px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* SVG on left, nav on right */
+  align-items: center; /* vertically align */
+  padding: 20px;
+}
+.wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+nav {
+  display: inline-block;
+  /* margin-top: 200px; */
+  /* border: solid 7px;
+  border-top-color: rgba(180, 5, 145, 0.4);
+  border-right-color: rgba(22, 28, 35, 0.4);
+  border-bottom-color: rgba(180, 5, 145, 0.4);
+  border-left-color: rgba(22, 28, 35, 0.4); */
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px; /* spacing between menu items */
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(161, 156, 17);
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+/* Hover effect */
+nav ul li a:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(180, 5, 145, 0.6),
+    rgba(12, 24, 164, 0.6)
+  );
+  color: white;
+  box-shadow: 0 0 10px rgba(180, 5, 145, 0.4), 0 0 10px rgba(12, 24, 164, 0.4);
+  transform: translateY(-3px);
+}
+
+/* main section */
+
+main {
+  display: inline-flex;
+  gap: 10px;
+  height: auto;
+}
+
+.sec > ul {
+  list-style: none;
+  padding: 30px;
+  margin: 0;
+}
+
+li > a {
+  text-decoration: none;
+  color: rgb(57, 7, 7);
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: #3ba258 1px 1px 2px;
+}
+
+/* Hover effect */
+li > a:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(180, 5, 145, 0.6),
+    rgba(12, 24, 164, 0.6)
+  );
+  color: white;
+  text-shadow: none; /* cleaner on gradient */
+  box-shadow: 0 0 22px rgba(180, 5, 145, 0.4), 0 0 12px rgba(12, 24, 164, 0.4);
+  transform: translateY(-3px);
+  padding: 5px;
+  border-radius: 6px;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: black;
+  margin: -40px 0;
+}
+
+/* Hidden state */
+.section-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 20px;
+  transition: max-height 0.5s ease, opacity 0.4s ease, padding 0.4s ease;
+}
+
+/* .section-content.no-toggle {
+  max-height: none;
+  overflow: visible;
+  opacity: 1;
+} */
+
+/* Visible state */
+.section-content.show {
+  max-height: 2000px; /* enough space for content */
+  opacity: 1;
+  padding: 20px;
+}
+
+#con {
+  background-color: rgb(103, 96, 96, 0.7);
+  display: inline-block;
+  border: 1px solid #333;
+  height: 400px;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.sec {
+  position: relative;
+  background-color: rgb(226, 214, 198, 0.5);
+  width: 300px;
+  height: 200px;
+  top: 100px;
+  border-radius: 50px;
+  box-shadow: 5px 10px 18px #888888;
+  line-height: 40px;
+  text-align: left;
+  backdrop-filter: blur(4px);
+}
+
+/* .sec label {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  line-height: 20px;
+  color: red;
+  margin-top: 10px;
+  padding: 50px;
+} */
+
+.park {
+  background-color: #f0f0f0;
+  border: 50px solid transparent;
+  border-image: url("./images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg") 40;
+  border-image-slice: 40;
+  border-image-width: 40px;
+  padding: 20px;
+  border-radius: 40px;
+}
+#summary {
+  display: none;
+  padding: 20px;
+}
+
+#summary.show {
+  display: block;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgba(180, 5, 145, 0.4),
+    rgba(12, 24, 164, 0.4)
+  );
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(180, 5, 145, 0.4), 0 0 15px rgba(12, 24, 164, 0.4);
+}
+
+footer a {
+  color: yellow;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}

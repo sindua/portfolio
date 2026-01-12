@@ -1,0 +1,65 @@
+.year-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #fff;
+  border: 2px solid #8e2de2;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.year-btn:hover {
+  background: #f0e6ff;
+}
+
+.year-details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 20px;
+  transition: max-height 0.5s ease, opacity 0.4s ease, padding 0.4s ease;
+  background: #f7f7f7;
+  border-left: 3px solid #8e2de2;
+  margin-bottom: 10px;
+}
+
+.year-details.show {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 20px;
+}
+
+.exp h2 {
+  background-color: yellow; /* sets the background to yellow */
+  color: black; /* text color for contrast */
+  padding: 10px;
+  border-radius: 4px; /* optional: rounded corners */
+  display: inline-block;
+}
+
+.bton ul {
+  list-style-type: square; /* options: disc, circle, square, none */
+}
+
+.bton > ul > li {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fff9c4; /* soft yellow background */
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.bton button {
+  background-color: #f1c40f; /* yellow background */
+  color: #000; /* black text */
+  font-size: 1rem; /* text size */
+  font-family: "Segoe UI", Arial, sans-serif; /* clean font */
+  padding: 10px 20px; /* spacing inside */
+  border: none; /* remove default border */
+  border-radius: 6px; /* rounded corners */
+  cursor: pointer; /* pointer on hover */
+}
